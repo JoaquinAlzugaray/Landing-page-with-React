@@ -5,6 +5,7 @@ import Card from "./Card.jsx";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
+import Footer from "./Footer.jsx";
 
 //create your first component
 const Home = () => {
@@ -19,16 +20,24 @@ const Home = () => {
 						<Jumbotron />
 					</div>
 				</div>
-				<div className="row">
+				<div
+					className="row"
+					style={{ marginTop: "25px", marginBottom: "25px" }}>
 					<div className="col-3">
 						<Card />
 					</div>
-					<div className="col-3">card2</div>
-					<div className="col-3">card3</div>
-					<div className="col-3">card4</div>
+					<div className="col-3">
+						<Card />
+					</div>
+					<div className="col-3">
+						<Card />
+					</div>
+					<div className="col-3">
+						<Card />
+					</div>
 				</div>
-				footer
 			</div>
+			<Footer />
 		</div>
 	);
 };
